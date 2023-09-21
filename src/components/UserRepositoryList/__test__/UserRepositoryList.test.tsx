@@ -46,7 +46,7 @@ describe('UserRepositoryList Component', () => {
     jest.clearAllMocks();
   });
 
-  it('menampilkan daftar pengguna dengan benar', () => {
+  it('displays the list of users correctly', () => {
     const { getByTestId, getAllByTestId } = render(<UserRepositoryList />);
     const userListElement = getByTestId('user-repository-list');
     const userItems = getAllByTestId('user-item');
@@ -58,7 +58,7 @@ describe('UserRepositoryList Component', () => {
     expect(userItems[1]).toHaveTextContent('user2');
   });
 
-  it('menavigasi ke halaman pengguna yang benar saat item diklik', () => {
+  it('navigates to the correct user page when an item is clicked', () => {
     const { getAllByTestId } = render(<UserRepositoryList />);
     const userItems = getAllByTestId('user-item');
 
@@ -67,7 +67,7 @@ describe('UserRepositoryList Component', () => {
     expect(mockPush).toHaveBeenCalled();
   });
 
-  it('membuat snapshot komponen', () => {
+  it('creates a component snapshot', () => {
     const { asFragment } = render(<UserRepositoryList />);
 
     expect(asFragment()).toMatchSnapshot();

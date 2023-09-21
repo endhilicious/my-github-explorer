@@ -1,5 +1,52 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`UserRepositoryList Component creates a component snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="userRepositoryList"
+    data-testid="user-repository-list"
+  >
+    <h2>
+      User Repositories
+    </h2>
+    <ul>
+      <li>
+        <div
+          class="cardHeader"
+          data-testid="user-item"
+        >
+          <img
+            alt="user1's avatar"
+            src="https://example.com/avatar1.png"
+          />
+          <div>
+            <h3>
+              user1
+            </h3>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div
+          class="cardHeader"
+          data-testid="user-item"
+        >
+          <img
+            alt="user2's avatar"
+            src="https://example.com/avatar2.png"
+          />
+          <div>
+            <h3>
+              user2
+            </h3>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</DocumentFragment>
+`;
+
 exports[`UserRepositoryList Component membuat snapshot komponen 1`] = `
 <DocumentFragment>
   <div
