@@ -1,0 +1,91 @@
+.userRepositoryList {
+  margin-top: 1rem;
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 13px;
+
+    li {
+      margin: 0.5rem 0;
+      font-size: 1.2rem;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      transition: all 0.3s ease-in-out;
+
+      &.active {
+        border-color: #007bff;
+      }
+
+      .cardHeader {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.5rem;
+        cursor: pointer;
+
+        img {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          margin-right: 1rem;
+        }
+
+        h3 {
+          margin: 0;
+        }
+      }
+
+      .starCount {
+        color: #f39c12;
+        font-weight: bold;
+      }
+
+      .cardBody {
+        padding: 0.5rem;
+        display: none;
+
+        p {
+          margin: 0;
+        }
+
+        a {
+          color: #007bff;
+          text-decoration: none;
+          margin-top: 0.5rem;
+          display: inline-block;
+        }
+      }
+    }
+  }
+}
+.selectedImage {
+  width: 50px;
+  border-radius: 50%;
+}
+.cardHeaderSelected {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  box-shadow: 3px 5px 6px #eaeaea;
+  border: 1px solid #eaeaea;
+  gap: 8px;
+  & > div:last-child {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    & svg {
+      cursor: pointer;
+    }
+  }
+}
+.cardHeaderSelectedRepo {
+  background-color: #ddd;
+}

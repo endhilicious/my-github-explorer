@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HomepageView Component renders HomepageView component correctly 1`] = `
+<div>
+  <div
+    class="home__wrapper"
+  >
+    <header
+      class="header"
+    >
+      <h1
+        data-testid="header-text"
+      >
+        Github Repositories Explorer
+      </h1>
+    </header>
+    <main>
+      <div
+        class="userSearch"
+      >
+        <div
+          class="searchBar"
+        >
+          <div
+            class="inputWrapper"
+          >
+            <input
+              class="searchInput"
+              data-testid="search-input"
+              placeholder="Search for users..."
+              type="text"
+              value=""
+            />
+          </div>
+          <button
+            class="searchButton"
+            data-testid="search-button"
+          >
+            <span
+              class="searchButtonText"
+            >
+              Search
+            </span>
+          </button>
+        </div>
+      </div>
+      <div
+        class="userRepositoryList"
+        data-testid="user-repository-list"
+      >
+        <h2>
+          User Repositories
+        </h2>
+        <ul />
+      </div>
+    </main>
+  </div>
+</div>
+`;

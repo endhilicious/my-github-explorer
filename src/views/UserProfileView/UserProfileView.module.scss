@@ -1,0 +1,32 @@
+.userProfile {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+  main {
+    margin-top: 2rem;
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+.selectedImage {
+  width: 50px;
+  border-radius: 50%;
+}
+.cardHeaderSelected {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  box-shadow: 3px 5px 6px #eaeaea;
+  border: 1px solid #eaeaea;
+  gap: 8px;
+  & > div:last-child {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    & svg {
+      cursor: pointer;
+    }
+  }
+}

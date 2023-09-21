@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header memiliki tampilan yang konsisten dengan snapshot 1`] = `
+<DocumentFragment>
+  <header
+    class="header"
+  >
+    <h1
+      data-testid="header-text"
+    >
+      Github Repositories Explorer
+    </h1>
+  </header>
+</DocumentFragment>
+`;
